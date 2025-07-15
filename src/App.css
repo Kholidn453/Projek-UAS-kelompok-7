@@ -1,0 +1,277 @@
+.navbar {
+padding-top: 0.6rem !important;
+padding-bottom: 0.6rem !important;
+}
+
+/* Gradasi orange navbar */
+.orange-navbar {
+background: linear-gradient(90deg, #ff5722, #ff9800);
+color: white;
+}
+
+.nav-link-custom,
+.nav-link {
+color: white !important;
+font-size: 16px;
+font-weight: 500;
+}
+
+.nav-link-custom:hover,
+.nav-link:hover {
+color: #ffd699 !important;
+}
+
+.active-nav {
+color: #ffcc00 !important;
+border-bottom: 2px solid #ffcc00;
+font-weight: bold;
+}
+
+/* Hilangkan panah di dropdown */
+.dropdown-toggle::after {
+display: none !important;
+}
+
+/* Style notifikasi selamat datang */
+.welcome-notification {
+position: fixed;
+top: 20px;
+left: 50%;
+transform: translateX(-50%);
+background-color: #ffcc00;
+color: #000;
+padding: 12px 24px;
+border-radius: 8px;
+font-weight: 500;
+font-family: 'Poppins', sans-serif;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+z-index: 9999;
+animation: slideDown 0.5s ease, fadeOut 0.5s ease 2.5s forwards;
+}
+
+@keyframes slideDown {
+from {
+transform: translate(-50%, -40px);
+opacity: 0;
+}
+to {
+transform: translate(-50%, 0);
+opacity: 1;
+}
+}
+
+@keyframes fadeOut {
+to {
+opacity: 0;
+transform: translate(-50%, -20px);
+}
+}
+
+/* Logout Modal */
+.logout-overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.4);
+z-index: 1050;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.logout-modal {
+background: #fffaf0;
+border: 2px solid orange;
+padding: 30px;
+border-radius: 12px;
+width: 320px;
+text-align: center;
+font-family: 'Poppins', sans-serif;
+box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.logout-modal h5 {
+font-size: 18px;
+color: #444;
+margin-bottom: 20px;
+}
+
+.logout-modal .btn {
+width: 100px;
+margin: 0 10px;
+}
+
+/* Jarak seimbang antara navbar dan banner */
+.with-navbar-space {
+padding-top: 90px;
+}
+
+.banner-spacing {
+padding-top: 10px;
+margin-top: 10px;
+}
+
+/* Cart popover */
+.popover-item {
+padding: 6px 12px;
+cursor: pointer;
+}
+
+.popover-item:hover {
+background-color: #f8f9fa;
+}
+
+.cart-popover {
+background-color: white;
+padding: 10px 15px;
+border-radius: 8px;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+font-family: 'Poppins', sans-serif;
+font-size: 14px;
+}
+/* Dropdown user */
+.position-relative {
+  position: relative !important;
+}
+
+.cart-popover,
+.position-absolute.bg-white {
+  z-index: 9999 !important;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+.position-absolute.bg-white {
+  transition: all 0.2s ease-in-out;
+}
+.popover-item {
+  padding: 8px 12px;
+  cursor: pointer;
+  color: #000; /* teks hitam agar kelihatan */
+}
+
+.popover-item:hover {
+  background-color: #f0f0f0;
+}
+.popover-item {
+  padding: 6px 12px;
+  cursor: pointer;
+  color: black; /* agar bacaan tidak putih di atas background putih */
+}
+.popover-item {
+  padding: 6px 12px;
+  cursor: pointer;
+  color: black;
+}
+/* Supaya dropdown teksnya tidak putih */
+.popover-item {
+  padding: 8px 14px;
+  cursor: pointer;
+  color: #333;
+}
+
+.popover-item:hover {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.nav-link-custom {
+  color: white !important;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav-link-custom:hover {
+  color: #ffd699 !important;
+}
+/* Efek hover dan transisi untuk popover/dropdown */
+.popover-item {
+  padding: 8px 14px;
+  cursor: pointer;
+  color: #333;
+  transition: all 0.2s ease-in-out;
+}
+
+.popover-item:hover {
+  background-color: #f0f0f0;
+  color: #000;
+  transform: translateX(4px);
+}
+
+/* Efek hover avatar / tombol login-signup */
+.nav-link-custom {
+  color: white !important;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.3s ease;
+}
+
+.nav-link-custom:hover {
+  color: #ffd699 !important;
+  transform: scale(1.05);
+}
+/* Style avatar icon biar tampil elegan */
+.avatar-icon {
+  border-radius: 50%;
+  border: 2px solid white;
+  transition: transform 0.3s ease;
+}
+.avatar-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Tooltip style (kalau kamu pakai react-tooltip) */
+.__react_component_tooltip {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  background: #333 !important;
+  padding: 8px 12px !important;
+  border-radius: 6px !important;
+}
+.fade-enter {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.3s ease;
+}
+.logout-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logout-modal {
+  background: #fffaf0;
+  border: 2px solid orange;
+  padding: 30px;
+  border-radius: 12px;
+  width: 320px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.logout-modal h5 {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 20px;
+}
